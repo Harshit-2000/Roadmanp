@@ -1,0 +1,48 @@
+/* FOOTER */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2% 7%;
+}
+
+.app-name {
+  margin: 6% 0;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.get-in-touch {
+  margin: 2% 0;
+}
+.maker-profile {
+  color: white !important;
+  margin: 3% 0;
+}
+
+.copyright {
+  padding: 10% 0;
+  text-align: center;
+}
+.layer {
+  float: left;
+}
+
+.form,
+.suggestions {
+  margin: 1% 0;
+  padding: 1.7%;
+  width: -webkit-fill-available;
+}
+
+.suggestions {
+  height: 100px;
+  text-align: left;
+}
+
+.send {
+  text-align: center;
+}

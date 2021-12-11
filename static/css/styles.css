@@ -1,0 +1,65 @@
+body {
+  margin: 10% 12%;
+}
+
+/* Basic Header css */
+.header-text {
+  font-size: 4.5rem !important;
+}
+.browse-content {
+  margin-top: 1%;
+  padding: 12px;
+  font-size: 1.2rem;
+}
+
+/* Courses Section Css */
+.card-1,
+.card-2 {
+  float: left;
+  margin: 5% 3%;
+}
+.card-1 {
+  clear: left;
+  margin-left: 0;
+  padding: 0 !important;
+}
+.card-2 {
+  padding: 7% 0 2% 2%;
+}
+hr {
+  border: 4px dotted;
+  border-style: none none dotted;
+  color: grey;
+}
+.time {
+  float: right;
+}
+
+/* Get Maximum Usage Section */
+.help-section {
+  clear: left;
+  padding-top: 3%;
+}
+.help-header {
+  margin-bottom: 5%;
+}
+.help-1,
+.help-2 {
+  float: left;
+}
+.help-1 {
+  margin: 2% 3% 2% 0;
+}
+.help-2 {
+  margin: 2% 0 3% 2%;
+}
+
+/* Tips and Tricks */
+.tips-section {
+  clear: both;
+  padding: 5% 2%;
+}
+.tips-header {
+  margin-bottom: 5%;
+}
+

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>
+    {{ subject.title }}
+</h1>
+
+{{ subject.description }}
+
+{% for topic in subject.topics.all %}
+<li>
+    {{topic.title}}
+    <p>
+        {{ topic.description|safe }}
+        {% for link in topic.links.all %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+    </p>
+</li>
+{% endfor %}
+
+{% endblock %}

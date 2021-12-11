@@ -1,0 +1,38 @@
+<div class="card-1 col-lg-5 col-md-5 col-sm-10 col-xs-10">
+    <h1>What will you learn ?</h1>
+    <br />
+    <h4>
+        The course is complete, yet accessible for beginners. We will start by
+        discovering what WebGL is and why using the Three.js library is a must.
+        We will then discover the various components of Three.js and once the
+        basics are acquired, we will move on to more advanced techniques to
+        display millions of particles, add physics, add interactions, create a
+        galaxy, animate a raging sea, etc.
+    </h4>
+</div>
+
+<!-- card-1 with info -->
+{% for subject in subjects %}
+
+{% if forloop.counter|divisibleby:2 %}
+<div class="card-1 col-lg-5 col-md-5 col-sm-10 col-xs-10">
+    {% else %}
+    <div class="card-2 col-lg-5 col-md-5 col-sm-10 col-xs-10">
+        {% endif %}
+        <h2>{{ forloop.counter }}</h2>
+        <h1>
+            <a href="{% url 'subject' subject.title %}">{{subject.title}}</a>
+        </h1>
+        <h6>
+            {{ subject.description }}
+        </h6>
+        <h6><i class="fas fa-calendar-alt"></i> {{subject.topics.count}} lessons — {{ subject.duration }}</h6>
+        {% for topic in subject.topics.all %}
+        <div>
+            <h6>{{ forloop.counter }}. {{topic.title}} <span class="time"> {{ topic.duration }} week</span></h6>
+            <hr />
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
