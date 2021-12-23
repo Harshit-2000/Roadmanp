@@ -1,17 +1,17 @@
 <!-- Navbar -->
 <section class="navbar-section">
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">Learn Smart</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">
-                    Sign Up
-                </button>
-                <button class="btn btn-outline-success" type="submit">
-                    Log In
-                </button>
-            </form>
+  <nav class="navbar complete-nav fixed-top navbar-light">
+    <div class="container-fluid">
+      <a class="topic navbar-brand" href="{% url 'home' %}">
+        <b> Learn Smart </b></a
+      >
+      <form class="d-flex">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> -->
+        <div class="for-sign-up">
+          <button class="btn sign-up" type="submit"><b> Sign Up </b></button>
         </div>
-    </nav>
+        <button class="btn log-in" type="submit"><b> Log In </b></button>
+      </form>
+    </div>
+  </nav>
 </section>
