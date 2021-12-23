@@ -18,7 +18,10 @@ def home(request):
 
 
 def subject(request, title):
-    subject = Subject.objects.get(title=title)
+    try:
+        subject = Subject.objects.get(title=title)
+    except:
+        subject = None
 
     context = {
         'subject': subject,

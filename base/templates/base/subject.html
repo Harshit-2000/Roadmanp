@@ -1,23 +1,21 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %} {% include 'navbar.html' %}
 
-{% block content %}
+<section class="subject">
+  <h1 class="header-1">{{ subject.title }}</h1>
+  <p>{{ subject.description }} {% for topic in subject.topics.all %}</p>
 
-<h1>
-    {{ subject.title }}
-</h1>
+  <h3>{{topic.title}}</h3>
+  <p>
+    {{ topic.description|safe }} {% for link in topic.links.all %}
+    <li>
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </li>
+  </p>
+  <br />
+  <hr />
 
-{{ subject.description }}
+  {% endfor %}
+</section>
 
-{% for topic in subject.topics.all %}
-<li>
-    {{topic.title}}
-    <p>
-        {{ topic.description|safe }}
-        {% for link in topic.links.all %}
-        <a href="{{ link.url }}">{{ link.title }}</a>
-        {% endfor %}
-    </p>
-</li>
-{% endfor %}
-
-{% endblock %}
+{% include 'footer.html' %} {% endblock %}
