@@ -1,29 +1,18 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="no-footer">
+  {% include 'navbar.html' %}
 
-{% block content %}
-
-{% include 'navbar.html' %}
-
-<!-- Basic Header -->
-<section class="header-section">
+  <!-- Basic Header -->
+  <section class="header-section">
     <h1 class="header-text">
-        Back to <br />
-        Learning
+      Back to <br />
+      Learning
     </h1>
-    <button type="button" class="browse-content btn btn-outline-success">
-        <i class="fas fa-infinity"></i>
-        Browse
-    </button>
-    <button type="button" class="browse-content btn btn-outline-danger">
-        <i class="fas fa-lightbulb"></i>
-        Project Ideas
-    </button>
     <img src="" alt="" />
-</section>
+  </section>
 
-<!-- Courses Section -->
-{% include 'base/courseSection.html' %}
+  <!-- Courses Section -->
+  {% include 'base/courseSection.html' %}
+</div>
 
-{% include 'footer.html' %}
-{% endblock %}
+{% include 'footer.html' %} {% endblock %}

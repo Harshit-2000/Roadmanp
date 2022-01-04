@@ -1,48 +1,50 @@
-/* FOOTER */
-
+/* FOOTER
+/* Sticky footer style and color
+-------------------------------------------------- */
 footer {
-  background-color: black;
-  color: white;
-  padding: 2% 7%;
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+  margin-bottom: 0 !important;
 }
 
-.app-name {
-  margin: 6% 0;
-  text-align: center;
-}
-a {
-  color: white;
+footer a {
+  color: #999;
   text-decoration: none;
 }
 
-.get-in-touch {
-  margin: 2% 0;
-}
-.maker-profile {
-  color: white !important;
-  margin: 3% 0;
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
 }
 
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
+.send-button {
+  background-color: white;
+}
+.send-button :hover {
+  background-color: white !important;
+}
+
+.text {
+  margin: 4% 0;
+}
 .copyright {
-  padding: 10% 0;
-  text-align: center;
-}
-.layer {
-  float: left;
+  padding-bottom: 1%;
+  text-align: center !important;
 }
 
-.form,
-.suggestions {
-  margin: 1% 0;
-  padding: 1.7%;
-  width: -webkit-fill-available;
-}
-
-.suggestions {
-  height: 100px;
-  text-align: left;
-}
-
-.send {
-  text-align: center;
+/* Icons */
+.icon {
+  color: whitesmoke !important;
+  margin: 2% 5% 0;
 }
