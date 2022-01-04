@@ -1,11 +1,50 @@
 body {
-  margin: 10% 12%;
+  background-color: aliceblue;
+  font-family: -webkit-pictograph;
+  margin-bottom: 0 !important;
+}
+.no-footer {
+  margin: 5% 15% 10%;
+}
+
+/* Navbar */
+.complete-nav {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  background-color: aliceblue;
+}
+.topic {
+  font-family: -webkit-pictograph;
+}
+.sign-up,
+.log-in {
+  border-radius: 100px;
+  font-family: -webkit-pictograph;
+  margin-right: 10px;
+  padding: 10px 25px;
+}
+.for-sign-up :hover {
+  color: #7462e4;
+}
+.for-log-in :hover {
+  color: white;
+}
+.sign-up {
+  background-color: white;
+  color: #6f5cf2;
+}
+.log-in {
+  background-color: #6f5cf2;
+  color: white;
 }
 
 /* Basic Header css */
+.header-section {
+  margin: 10% 0 5%;
+}
 .header-text {
   font-size: 4.5rem !important;
 }
+
 .browse-content {
   margin-top: 1%;
   padding: 12px;
@@ -13,26 +52,41 @@ body {
 }
 
 /* Courses Section Css */
-.card-1,
-.card-2 {
-  float: left;
-  margin: 5% 3%;
-}
 .card-1 {
-  clear: left;
-  margin-left: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  background-color: aliceblue;
+  display: inline;
   padding: 0 !important;
+  z-index: 400;
 }
-.card-2 {
-  padding: 7% 0 2% 2%;
+a :hover {
+  text-decoration: none;
 }
 hr {
-  border: 4px dotted;
+  border: 3px dotted;
   border-style: none none dotted;
   color: grey;
 }
 .time {
   float: right;
+}
+.for {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  background-color: aliceblue;
+  margin: 5% 0;
+  padding: 3%;
+}
+.subject-color:nth-child(4n + 1) {
+  color: red;
+}
+.subject-color:nth-child(4n + 2) {
+  color: green;
+}
+.subject-color:nth-child(4n + 1) {
+  color: blue;
+}
+.subject-color:nth-child(4n + 1) {
+  color: purple;
 }
 
 /* Get Maximum Usage Section */
@@ -62,4 +116,3 @@ hr {
 .tips-header {
   margin-bottom: 5%;
 }
-
